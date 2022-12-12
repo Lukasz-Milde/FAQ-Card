@@ -1,0 +1,73 @@
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+_________________  GENERALS  ________________________
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+:root {
+	--text-blue: hsl(238, 29%, 16%);
+	--text-dkblue: hsl(240, 6%, 50%);
+	--text-xdkblue: hsl(237, 12%, 33%);
+	--text-red: hsl(14, 88%, 65%);
+	--gradient-violet: hsl(273, 75%, 66%);
+	--gradient-blue: hsl(240, 73%, 65%);
+	--divider-blue: hsl(240, 5%, 91%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	height: 100vh;
+	background-image: linear-gradient(
+		var(--gradient-violet),
+		var(--gradient-blue)
+	);
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+_________________  DESKTOP STYLES  __________________
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.card {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	background-color: white;
+	margin: 10rem auto;
+	max-width: 70vw;
+	border-radius: 25px;
+	overflow: hidden;
+	background-image: url(images/bg-pattern-desktop.svg);
+	background-repeat: no-repeat;
+	background-position: -300px center;
+	background-size: 700px;
+}
+
+.card__box {
+	position: absolute;
+
+	z-index: 1;
+}
+
+.card__image {
+	position: relative;
+}
+
+.card__image img {
+	position: absolute;
+	top: 5rem;
+	left: -4.5rem;
+}
+
+.card__text {
+	padding: 5rem 5rem 5rem 0;
+	width: 45%;
+}
