@@ -167,13 +167,42 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 		display: none;
 	}
 
+	.card__image-mobile img {
+		display: block;
+		position: absolute;
+		width: 13rem;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -21%;
+	}
+
 	.card {
 		padding: 5rem 1rem 1rem 1rem;
+		min-width: 300px;
 		justify-content: center;
+		background-image: url(images/bg-pattern-mobile.svg);
+		background-repeat: no-repeat;
+		background-size: 13rem;
+		background-position: center 0;
 	}
 
 	.card__text {
 		width: 90%;
 		padding: 0;
+	}
+
+	.accordion__question {
+		font-size: 0.75em;
+		text-align: left;
+	}
+
+	.accordion__question::after {
+		width: 0.5rem;
+		margin-top: 0;
+	}
+
+	h1 {
+		margin-top: 2rem;
+		text-align: center;
 	}
 }
